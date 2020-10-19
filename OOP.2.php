@@ -53,7 +53,7 @@ class User
      * @return void
      */
 
-    public function setAgeRenatPancisin(int $ageVítVoráček)
+    public function setAgeVítVoráček(int $ageVítVoráček)
     {
         $this->ageVítVoráček = $ageVítVoráček;
     }
@@ -64,7 +64,7 @@ class User
      * @return void
      */
 
-    public function setSizeRenatPancisin(string $sizeVítVoráček)
+    public function setSizeVítVoráček(string $sizeVítVoráček)
     {
         $this->sizeRenatPancisin = $sizeVítVoráček;
     }
@@ -74,7 +74,7 @@ class User
      * @return void
      */
 
-    public function setClassRenatPancisin(string $classVítVoráček)
+    public function setClassVítVoráček(string $classVítVoráček)
     {
         $this->classRenatPancisin = $classVítVoráček;
     }
