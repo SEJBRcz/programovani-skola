@@ -85,7 +85,7 @@ class User
      * @return void
      */
 
-    public function setBirthdayRenatPancisin(int $birthdayVítVoráček)
+    public function setBirthdayVítVoráček(int $birthdayVítVoráček)
     {
         $this->birthdayRenatPancisin = $birthdayVítVoráček;
     }
