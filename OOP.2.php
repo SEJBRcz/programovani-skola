@@ -66,7 +66,7 @@ class User
 
     public function setSizeVítVoráček(string $sizeVítVoráček)
     {
-        $this->sizeRenatPancisin = $sizeVítVoráček;
+        $this->sizeVítVoráček = $sizeVítVoráček;
     }
      /**
      * @author VítVoráček   
@@ -76,7 +76,7 @@ class User
 
     public function setClassVítVoráček(string $classVítVoráček)
     {
-        $this->classRenatPancisin = $classVítVoráček;
+        $this->classVítVoráček = $classVítVoráček;
     }
     
     /**
@@ -87,7 +87,7 @@ class User
 
     public function setBirthdayVítVoráček(int $birthdayVítVoráček)
     {
-        $this->birthdayRenatPancisin = $birthdayVítVoráček;
+        $this->birthdayVítVoráček = $birthdayVítVoráček;
     }
 
     /**
