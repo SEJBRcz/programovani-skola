@@ -13,7 +13,7 @@ $par2 = "CZK";
 
 #code
 
-function getPrice($x, $y)
+function VitVoracekgetPrice($x, $y)
 {
 
  echo $y;
@@ -24,7 +24,7 @@ function getPrice($x, $y)
 
 
 
-echo getPrice($par1, $par2);
+echo VitVoracekgetPrice($par1, $par2);
 echo "<br>";
 echo "rounded:";
 echo round($xy);
