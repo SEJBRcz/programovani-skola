@@ -1,22 +1,35 @@
 <?php
-  
-    function GenPINVítVoráček(int $length = 4){
-    
-        $x = '';
-        for($i = 1; $i <= $length; $i++){
-            $x .= dechex(random_int(0,9));
-        }
-        return substr($x, 0, $length);
+ class VítVoráčekpin{
+
+    private $min;
+    private $max;
+
+    function getter($min, $max){
+        $this->min = $min;
+        $this->max = $max;
+    } 
+    function setter(){
+        return $this->min;
     }
-    var_dump(GenPINVítVoráček());
-    
-    
-    
-  
-    for($j = 0; $j <= 4; $j++){
-        echo GenPINVítVoráček();
-        echo ("<br>");
-    }; 
-    
-     
+    function getPins(){
+
+return $randbytes = (random_int($this->min, $this->max));
+
+
+        }
+
+}
+ 
+
+
+for($i = 0;$i< 5;$i++){
+    for($x = 0;$x < 4; $x++){
+ $pinpin = new pin();
+$pinpin->getter(1, 4);
+echo $pins = $pinpin->getPins();
+file_put_contents('pins.txt', $pins, FILE_APPEND);
+}
+file_put_contents('pins.txt', "\n", FILE_APPEND);
+echo "<br>";
+}
 ?>
