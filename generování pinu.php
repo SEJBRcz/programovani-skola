@@ -24,7 +24,7 @@ return $randbytes = (random_int($this->min, $this->max));
 
 for($i = 0;$i< 5;$i++){
     for($x = 0;$x < 4; $x++){
- $pinpin = new pin();
+ $pinpin = new VítVoráčekpin();
 $pinpin->getter(1, 4);
 echo $pins = $pinpin->getPins();
 file_put_contents('pins.txt', $pins, FILE_APPEND);
