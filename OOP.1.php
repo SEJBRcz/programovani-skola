@@ -6,35 +6,35 @@ class User
 {
   
 
-    public $gameVítVoráček = 'rysis';
+    public $gameVitVoracek = 'rysis';
 
-    public $tridaVítVoráček = 'ZT3B';
+    public $tridaVitVoracek = 'ZT3B';
 
-    public $hairVítVoráček = 'Black';
+    public $hairVitVoracek = 'Black';
 
-    public $nameVítVoráček = 'Vít';
+    public $nameVitVoracek = 'Vít';
 
-    public $animeVítVoráček = 'TenseiShiraiSlimeDataKen';
+    public $animeVitVoracek = 'TenseiShiraiSlimeDataKen';
 
-    public $lastnameVítVoráček = 'Voráček';
+    public $lastnameVitVoracek = 'Voráček';
 
-    public $mangaVítVoráček = ' mahoshoujo';
+    public $mangaVitVoracek = ' mahoshoujo';
 
-    public $namedogVítVoráček = 'grinch';
+    public $namedogVitVoracek = 'grinch';
 
-    private $ageVítVoráček;
+    private $ageVitVoracek;
 
-    private $classVítVoráček;
+    private $classVitVoracek;
 
-    private $sizeVítVoráček;
+    private $sizeVitVoracek;
 
-    private $birthdayVítVoráček;
+    private $birthdayVitVoracek;
 
-    protected $loginVítVoráček;
+    protected $loginVitVoracek;
 
-    protected $passwordVítVoráček;
+    protected $passwordVitVoracek;
 
-    protected $pincodeVítVoráček;
+    protected $pincodeVitVoracek;
 
     public function __construct()
     {
@@ -43,103 +43,103 @@ class User
 
    
 
-    public function setAgeVítVoráček( $ageVítVoráček)
+    public function setAgeVitVoracek( $ageVitVoracek)
     {
-        $this->ageVítVoráček = $ageVítVoráček;
+        $this->ageVitVoracek = $ageVitVoracek;
     }
 
    
-    public function setSizeVítVoráček( $sizeVítVoráček)
+    public function setSizeVítVoráček( $sizeVitVoracek)
     {
-        $this->sizeVítVoráček = $sizeVítVoráček;
+        $this->sizeVitVoracek = $sizVitVoracek;
     }
    
-    public function setClassVítVoráček( $classVítVoráček)
+    public function setClassVitVoracek( $classVitVoracek)
     {
-        $this->classVítVoráček = $classVítVoráček;
+        $this->classVitVoracek = $classVitVoracek;
     }
     
     
-    public function setBirthdayVítVoráček( $birthdayVítVoráček)
+    public function setBirthdayVitVoracek( $birthdayVitVoracek)
     {
-        $this->birthdayVítVoráček = $birthdayVítVoráček;
+        $this->birthdayVitVoracek = $birthdayVitVoracek;
     }
 
    
-    public function getGameVítVoráček()
+    public function getGameVitVoracek()
     {
-        return $this->gameVítVoráček;
+        return $this->gameVitVoracek;
     }
 
     
-    public function getTridaVítVoráček()
+    public function getTridaVitVoracek()
     {
-        return $this->tridaVítVoráček;
+        return $this->tridaVitVoracek;
     }
 
     
-    public function getHairVítVoráček()
+    public function getHairVitVoracek()
     {
-        return $this->hairVítVoráček;
+        return $this->hairVitVoracek;
     }
 
   
-    public function getLastnameVítVoráček()
+    public function getLastnameVitVoracek()
     {
-        return $this->lastnameVítVoráček;
+        return $this->lastnameVitVoracek;
     }
 
     
-     public function getAnimeVítVoráček()
+     public function getAnimeVitVoracek()
               {
-        return $this->animeVítVoráček;
+        return $this->animeVitVoracek;
     }
   
 
-    public function getNameVítVoráček()
+    public function getNameVitVoracek()
     {
-        return $this->nameVítVoráček;
+        return $this->nameVitVoracek;
     }
   
     
-    public function getMangaVítVoráček()
+    public function getMangaVitVoracek()
     {
-        return $this->mangaVítVoráček;
+        return $this->mangaVitVoracek;
     }
 
   
     
-    public function getNamedogVítVoráček()
+    public function getNamedogVitVoracek()
              {
-        return $this->namedogVítVoráček;
+        return $this->namedogVitVoracek;
     }
 }
 
 $user = new User();
 
-$user->setClassVítVoráček('PRG/PS');
+$user->setClassVitVoracek('PRG/PS');
 
-$user->setAgeVítVoráček(18);
+$user->setAgeVitVoracek(18);
 
-$user->setSizeVítVoráček('179');
+$user->setSizeVitVoracek('179');
 
-$user->setBirthdayVítVoráček(2002);
+$user->setBirthdayVitVoracek(2002);
 
-echo $user->getGameVítVoráček();
+echo $user->getGameVitVoracek();
 
-echo $user->getTridaVítVoráček();
+echo $user->getTridaVitVoracek();
 
-echo $user->getHairVítVoráček();
+echo $user->getHairVitVoracek();
 
-echo $user->getNameVítVoráček();
+echo $user->getNameVitVoracek();
 
-echo $user->getLastnameVítVoráček();
+echo $user->getLastnameVitVoracek();
 
-echo $user->getAnimeVítVoráček();
+echo $user->getAnimeVitVoracek();
 
-echo $user->getMangaVítVoráček();
+echo $user->getMangaVitVoracek();
 
-echo $user->getNamedogVítVoráček();
+echo $user->getNamedogVitVoracek();
 
 var_dump($user);
 
