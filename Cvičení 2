@@ -1,0 +1,159 @@
+<?php
+
+declare(strict_types=1);
+
+namespace VitVoracekUser;
+
+use DateTime;
+
+ini_set("xdebug.overload_var_dump", "1");
+/** Uvodni text
+ * @author VitVoracek
+ * tento kod slouzi pouze pro vlastni ucely (vzdelavaci)
+ * zklada se s jedne class nekolika atributu, metod a nasledne jejich volani
+ */
+
+class UserVitVoracek
+{
+    // atributy
+    private $agePrivateVitVoracek;
+    private $fullNamePrivateVitVoracek;
+    protected $ageProtectedVitVoracek;
+    protected $fullNameProtectedVitVoracek;
+    protected $genderProtectedVitVoracek;
+    public $agePublicVitVoracek = 18;
+    public $firstNamePublicVitVoracek = "Michal";
+    public $lastNamePublicVitVoracek = "Slanina";
+    public $fullNamePublicVitVoracek = "Michal Slanina";
+    public $genderPublicVitVoracek = "Male";
+
+    // konstruktor
+    public function __construct()
+    {
+    }
+    // set metody (private)
+
+    /**
+     * setAgePrivateVitVoracek
+     *
+     * @param  int $agePrivateVitVoracek
+     * @return int
+     */
+    public function setAgePrivateVitVoracek(int $agePrivateMichalSlanina): int
+    {
+        return $agePrivateVitVoracek;
+        /**
+         * toto je jednoducha funkce ale v pripade
+         * ze by byla slozitejsi tak by se popisovala
+         * pomoci viceradkoveho komentare
+         */
+        /*
+        priklad viceradkoveho komentare
+        dalsi radek
+        */
+    }
+    /**
+     * setFullNamePrivateVitVoracek
+     *
+     * @param  string $fullNamePrivateVitVoracek
+     * @return string
+     */
+    public function setFullNamePrivateVitVoracek(string $fullNamePrivateVitVoracek): string
+    {
+        return $fullNamePrivateVitVoracek;
+    }
+    // get metody (public)    
+    /**
+     * getAgePublicVitVoracek
+     *
+     * @return int
+     */
+    public function getAgePublicVitVoracek(): int
+    {
+        return $this->agePublicVitVoracek;
+    }
+    /**
+     * getFirstNamePublicVitVoracek
+     *
+     * @return string
+     */
+    public function getFirstNamePublicVitVoracek(): string
+    {
+        return $this->firstNamePublicVitVoracek;
+    }
+    /**
+     * getLastNamePublicVitVoracek
+     *
+     * @return string
+     */
+    public function getLastNamePublicVitVoracek(): string
+    {
+        return $this->lastNamePublicVitVoracek;
+    }
+    /**
+     * getFullNamePublicVitVoracek
+     *
+     * @return string
+     */
+    public function getFullNamePublicVitVoracek(): string
+    {
+        return $this->fullNamePublicVitVoracek;
+    }
+    /**
+     * getGenderPublicVitVoracek
+     *
+     * @return string
+     */
+    public function getGenderPublicVitVoracek(): string
+    {
+        return $this->genderPublicVitVoracek;
+    }
+    /**
+     * michalVitVoracek
+     *
+     * @param  float $decimal
+     * @param  string $mena
+     * @return string
+     */
+    public function michalVitVoracek(float $decimal, string $mena): string
+    {
+        $formatovanaCena = number_format(round($decimal, 2), 2, ",", " ");
+        $celaCena = $formatovanaCena . " " . $mena;
+        return $celaCena;
+    }
+}
+final class VitVoracekUtils
+{
+    private static $minVitVoracek = 0;
+    private static $maxVitVoracek = 9;
+    private static $yearVitVoracek = 2020;
+    
+        
+    /**
+     * getPinVitVoracek
+     *
+     * @param  int $pinLength
+     * @return string
+     */
+    public static function genPinVitVoracek(int $pinLength = 4): string
+    {
+        $generatedNumberNew = null;
+        for ($i=0; $i < $pinLength; $i++) { 
+            $generatedNumber = random_int(self::$minVitVoracek,self::$maxVitVoracek);
+            $generatedNumberNew .= $generatedNumber;
+        }
+        return (string)$generatedNumberNew;
+    }
+    
+    /**
+     * getVsVitVoracek
+     *
+     * @param  int $numberVitVoracek
+     * @return int
+     */
+    public static function getVsVitVoracek(int $numberVitVoracek): int
+    {
+        $varCislo = self::$yearVitVoracek.str_pad((string)$numberVitVoracek, 6, "0", STR_PAD_LEFT);
+        return (int)$varCislo;
+    }
+}
