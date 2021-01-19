@@ -1,35 +1,38 @@
 <?php
- class VítVoráčekpin{
+// pridani class za pomoci require
+require 'classes/UserVitVoracek.php';
+// prepisu si namespce na user
+use VitVoracek as user;
+use VitVoraceklUser\VitVoracekUtils;
 
-    private $min;
-    private $max;
-
-    function getter($min, $max){
-        $this->min = $min;
-        $this->max = $max;
-    } 
-    function setter(){
-        return $this->min;
-    }
-    function getPins(){
-
-return $randbytes = (random_int($this->min, $this->max));
-
-
-        }
-
-}
- 
-
-
-for($i = 0;$i< 5;$i++){
-    for($x = 0;$x < 4; $x++){
- $pinpin = new VítVoráčekpin();
-$pinpin->getter(1, 4);
-echo $pins = $pinpin->getPins();
-file_put_contents('pins.txt', $pins, FILE_APPEND);
-}
-file_put_contents('pins.txt', "\n", FILE_APPEND);
+$UserVitVoracek = new user\UserVitVoracek;
+// metody set
 echo "<br>";
+echo $UserVitVoracek->setAgePrivateVitVoracek(15);
+echo "<br>";
+echo $UserVitVoracek->setFullNamePrivateVitVoracek("Vit");
+echo "<br>";
+// metody get
+echo $UserVitVoracek->getAgePublicVitVoracek();
+echo "<br>";
+echo $UserVitVoracek->getFirstNamePublicVitVoracek();
+echo "<br>";
+echo $UserVitVoracek->getLastNamePublicVitVoracek();
+echo "<br>";
+echo $UserVitVoracek->getFullNamePublicVitVoracek();
+echo "<br>";
+echo $UserVitVoracek->getGenderPublicVitVoracek();
+echo "<br>";
+
+// cely class User ze souboru UserVitVoracek (slozka classes)
+var_dump($UserVitVoracek);
+echo "<br>";
+// Funkce getPrice
+echo $UserVitVoracek->michalVitVoracek(5500000.189, "CZK");
+echo "<br>";
+echo "<br>";
+// staticka funkce getPin - vygeneruje 4 mistny pin
+for ($i=0; $i < 5; $i++) { 
+    echo VitVoracekUtils::genPinVitVoracek();
+    echo "<br>";
 }
-?>
