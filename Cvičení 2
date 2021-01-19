@@ -22,9 +22,9 @@ class UserVitVoracek
     protected $fullNameProtectedVitVoracek;
     protected $genderProtectedVitVoracek;
     public $agePublicVitVoracek = 18;
-    public $firstNamePublicVitVoracek = "Michal";
-    public $lastNamePublicVitVoracek = "Slanina";
-    public $fullNamePublicVitVoracek = "Michal Slanina";
+    public $firstNamePublicVitVoracek = "Vit";
+    public $lastNamePublicVitVoracek = "Voracek";
+    public $fullNamePublicVitVoracek = "VitVoracek";
     public $genderPublicVitVoracek = "Male";
 
     // konstruktor
@@ -39,7 +39,7 @@ class UserVitVoracek
      * @param  int $agePrivateVitVoracek
      * @return int
      */
-    public function setAgePrivateVitVoracek(int $agePrivateMichalSlanina): int
+    public function setAgePrivateVitVoracek(int $agePrivateVitVoracek): int
     {
         return $agePrivateVitVoracek;
         /**
@@ -109,13 +109,13 @@ class UserVitVoracek
         return $this->genderPublicVitVoracek;
     }
     /**
-     * michalVitVoracek
+     * VitVoracek
      *
      * @param  float $decimal
      * @param  string $mena
      * @return string
      */
-    public function michalVitVoracek(float $decimal, string $mena): string
+    public function lVitVoracek(float $decimal, string $mena): string
     {
         $formatovanaCena = number_format(round($decimal, 2), 2, ",", " ");
         $celaCena = $formatovanaCena . " " . $mena;
