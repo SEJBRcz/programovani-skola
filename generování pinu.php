@@ -28,7 +28,7 @@ echo "<br>";
 var_dump($UserVitVoracek);
 echo "<br>";
 // Funkce getPrice
-echo $UserVitVoracek->michalVitVoracek(5500000.189, "CZK");
+echo $UserVitVoracek->VitVoracek(5500000.189, "CZK");
 echo "<br>";
 echo "<br>";
 // staticka funkce getPin - vygeneruje 4 mistny pin
